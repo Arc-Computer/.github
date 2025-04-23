@@ -1,6 +1,6 @@
 <h1 align="center">
-  <img src="Arc-Computer/.github/arc_logo.png" width="125" alt="Arc logo"/><br>
-  Arc Memory
+  <img src="arc_logo.png" width="125" alt="Arc logo"/><br>
+  Arc
 </h1>
 <p align="center">
   <em>The local-first memory layer that surfaces <strong>why</strong> behind every line of code—<br>
