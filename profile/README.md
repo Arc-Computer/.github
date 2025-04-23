@@ -30,44 +30,9 @@ Arc builds that memory:
 
 ---
 
-## 🏗️ Architecture
-
-```text
-             ┌─────────────┐   REST/gRPC   ┌──────────────┐
-             │  VS Code    │◀──────────────│  Arc MCP     │
-             │  Extension  │   decision    │  Server      │
-             └─────────────┘   trails      └──────────────┘
-                    ▲                               ▲
-      hover & UI    │                               │ tools/manifest.json
-                    │                               │ agent calls
-             ┌──────┴──────┐                 ┌──────┴──────-┐
-             │  Graph DB   │◀───────────────▶│  Agents      │
-             │ (SQLite+FTS)│  local access   │ (Copilot,…)  │
-             └─────────────┘                 └──────────────┘
-                       ▲
-                       │ arc build
-                       │
-             ┌─────────────────┐
-             │  GitHub CI      │  read-only API
-             │  + GitHub App   │──────────────▶ PRs / Issues
-             └─────────────────┘
-```
-
----
-
-## 🔭 Roadmap
-
-| Phase | Focus | ETA |
-|-------|-------|-----|
-| **v0.9** | Local TKG, MCP tools, VS Code hover/timeline | May 2025 |
-| **v1.0** | Vector search plug-in, GitLab ingest, workspace-wide risk badges | Q3 2025 |
-| **v1.1** | Cloud opt-in sync, org dashboards, policy engine | Q4 2025 |
-
----
-
 ## 🤝 Design Partner Program
 
-We’re onboarding **3–5 engineering teams** who:
+We’re onboarding **engineering teams** who:
 
 * Review ≥ 20 pull requests per week  
 * Run security-critical or legacy-heavy codebases  
@@ -80,7 +45,7 @@ Design partners get 1-on-1 integration support and influence the roadmap.
 
 ## 🛠  Contributing
 
-Arc Memory is open-source _in layers_:
+Arc is open-source _in layers_:
 
 * `arc-memory` (MIT) – core library & CLI 
 * `arc-memory-mcp` (MIT) – edge server + tools  
