@@ -1,9 +1,8 @@
 <h1 align="center">
   <img src="arc_logo.png" width="125" alt="Arc logo"/><br>
-  Arc
 </h1>
 <p align="center">
-  <em>The local-first memory layer that surfaces <strong>why</strong> behind every line of code—<br>
+  <em>Arc: The local-first memory layer that surfaces <strong>why</strong> behind every line of code—<br>
   for humans and AI agents alike.</em>
 </p>
 <p align="center">
