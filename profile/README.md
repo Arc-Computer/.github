@@ -56,14 +56,6 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for coding standards and CLA.
 
 ---
 
-## 📝 License
-
-This repository is licensed under the MIT License.
-
----
-
-### About
-
 Arc is building the **memory layer for engineering teams and their agents**—starting in VS Code.  
 Made with ☕ & 🧠 in New York & remote.
 
