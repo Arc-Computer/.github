@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="Arc-Computer/.github/arc-logo.png" width="125" alt="Arc logo"/><br>
+  <img src="Arc-Computer/.github/arc_logo.png" width="125" alt="Arc logo"/><br>
   Arc Memory
 </h1>
 <p align="center">
