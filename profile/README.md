@@ -1,5 +1,3 @@
-<h1 align="center">
-  <img src="arc_logo.png" width="125" alt="Arc logo"/><br>
 </h1>
 <p align="center">
   <em>Arc: The local-first memory layer that surfaces <strong>why</strong> behind every line of code—<br>
