@@ -13,18 +13,15 @@
 
 ---
 
-## 🚀 Our Vision
+## 🚀 About Us
 
-Software will soon be written **by fleets of autonomous agents collaborating with humans**.  
-That future needs a **shared, trusted memory**—one that captures not just _what_ changed, but **_why every decision was made_**.
+At Arc, we're building the foundational memory layer for modern software engineering. Our mission is simple: ensure engineering teams never lose the critical "why" behind their code.
 
-Arc builds that memory:
+As AI-driven development accelerates, engineers produce code faster—but without capturing the vital architectural context behind their decisions. This leads to technical debt, fragmented knowledge, and costly inefficiencies.
 
-* **Temporal Knowledge Graph, in your IDE** – embeds commit history, PR rationales, issues and ADRs directly in VS Code, so every line knows its past.  
-* **Agent-ready API** – any LLM or tool can query the graph (`/searchEntity`, `/traceHistory`, `/openFile`, `/runTests`) to plan safe, multi-step fixes.  
-* **Local-first & privacy-first** – graphs are built in CI and stay on the developer’s machine; no code or IP leaves your repo.  
-* **Verification layer for AI code** – provenance and test execution ensure AI-generated patches don’t reopen old bugs or violate arch decisions.  
-* **Foundation for distributed AI systems** – scalable to monorepos and multi-service graphs, aligning with long-context frontier models.
+Arc solves this by embedding a structured, queryable memory directly within the developer's IDE. Our temporal knowledge graph captures architectural decisions, system evolution, and contextual insights in real-time, turning scattered institutional knowledge into actionable intelligence. Instantly access the rationale behind every line of code, streamline your code reviews, and enhance collaboration between human developers and AI-powered agents.
+
+Visit us at [www.arc.computer](www.arc.computer) to learn more and join us as we redefine the future of software development.
 
 > **Mission:** *Bridge the gap between human decisions and machine understanding, becoming the temporal source-of-truth for every engineering team and their agents.*
 
@@ -56,7 +53,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for coding standards and CLA.
 
 ---
 
-Arc is building the **memory layer for engineering teams and their agents**—starting in VS Code.  
-Made with ☕ & 🧠 in New York & remote.
-
-```
+Arc is building the **memory layer for engineering teams and their agents**. Made with ☕ & 🧠 in New York.
