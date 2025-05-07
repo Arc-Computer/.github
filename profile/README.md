@@ -1,56 +1,82 @@
-</h1>
-<p align="center">
-  <em>Arc: The local-first memory layer that surfaces <strong>why</strong> behind every line of code—<br>
-  for humans and AI agents alike.</em>
-</p>
+<h1 align="center">Arc — Code’s Collective Memory</h1>
+<p align="center"><em>
+Keeps track of <strong>what</strong> changed, <strong>why</strong> it changed, and <strong>what might break next</strong>.
+</em></p>
+
 <p align="center">
   <a href="https://www.arc.computer">Website</a> •
+  <a href="https://github.com/Arc-Computer/arc-whitepaper/blob/main/paper/whitepaper.pdf">📄 Position Paper</a> •
   <a href="#-quick-start">Quick start</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-roadmap">Roadmap</a> •
-  <a href="#-design-partner-program">Design partners</a>
+  <a href="#-open-questions">Open questions</a> •
+  <a href="#-design-partners">Design partners</a>
 </p>
 
 ---
 
-## 🚀 About Us
+## 🚀 What is Arc?
 
-At Arc, we're building the foundational memory layer for modern software engineering. Our mission is simple: ensure engineering teams never lose the critical "why" behind their code.
+Arc is a **memory layer** for codebases.  
 
-As AI-driven development accelerates, engineers produce code faster—but without capturing the vital architectural context behind their decisions. This leads to technical debt, fragmented knowledge, and costly inefficiencies.
+It does three things:
 
-Arc solves this by embedding a structured, queryable memory directly within the developer's IDE. Our temporal knowledge graph captures architectural decisions, system evolution, and contextual insights in real-time, turning scattered institutional knowledge into actionable intelligence. Instantly access the rationale behind every line of code, streamline your code reviews, and enhance collaboration between human developers and AI-powered agents.
+1. **Captures the *why***  
+   Every commit, ticket, and design doc is linked to the code it changed.
+2. **Predicts the blast-radius**  
+   Before you merge, Arc shows which tests, services, or contracts could break.
+3. **Feeds that context to agents**  
+   Autonomous tools (and our own RL agents) can query the memory to plan long, multi-file refactors.
 
-Visit us at [www.arc.computer](www.arc.computer) to learn more and join us as we redefine the future of software development.
-
-> **Mission:** *Bridge the gap between human decisions and machine understanding, becoming the temporal source-of-truth for every engineering team and their agents.*
-
----
-
-## 🤝 Design Partner Program
-
-We’re onboarding **engineering teams** who:
-
-* Review ≥ 20 pull requests per week  
-* Run security-critical or legacy-heavy codebases  
-* Want to experiment with AI agents (Cursor, Copilot, etc.)
-
-Design partners get 1-on-1 integration support and influence the roadmap.  
-[Apply here](mailto:jarrod@arc.computer) →
+> **Goal:** Make changing large systems as safe and repeatable as running a test suite.
 
 ---
 
-## 🛠  Contributing
+## 🔍 Open questions <a id="-open-questions"></a>
 
-Arc is open-source _in layers_:
+We treat Arc as a research project in the open. Current threads:
 
-* `arc-memory` (MIT) – core library & CLI 
-* `arc-memory-mcp` (MIT) – edge server + tools  
-* `arc-extension` (MIT) – VS Code / IDE extension
+| Theme | What we’re asking | Work in repo |
+|-------|------------------|--------------|
+| **Richer history, fast reads** | How do we store years of code+docs and still answer “why” in &lt; 100 ms? | Prototype graph over Postgres + benchmarks |
+| **Safe concurrent edits** | Can two agents land overlapping changes without human re-bases? | First pass at a *causal* CRDT merge rule |
+| **Rewarding provenance** | Does giving agents “points” for adding good links speed up long refactors? | Offline RL loop + metrics script |
+| **Live, public evaluation** | What does a *real* benchmark for multi-agent coding look like? | **Synapse**: two Gemini-2.5 agents upgrade OpenSSL on a 5-service repo, streamed live |
 
-Bug reports, feature requests, and pull requests are welcome!  
-See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for coding standards and CLA.
+Read the details in the position paper or open an issue to dive in.
 
 ---
 
-Arc is building the **memory layer for engineering teams and their agents**. Made with ☕ & 🧠 in New York.
+## ⚡ Quick start
+
+```bash
+git clone https://github.com/Arc-Computer/arc-whitepaper.git
+open arc-whitepaper/paper/whitepaper.pdf
+````
+
+More code coming soon—star the repo to stay in the loop.
+
+---
+
+## 🤝 Design partners <a id="-design-partners"></a>
+
+We’re looking for teams that:
+
+* Review 20 + PRs a week
+* Run safety-critical or legacy code
+* Are experimenting with Copilot, Claude, Cursor, etc.
+
+You’ll get hands-on support and help steer the roadmap.
+Say hi → **[Jarrod@arc.computer](mailto:Jarrod@arc.computer)**
+
+---
+
+## 🛠 Contributing
+
+Bug reports, research ideas, and pull requests welcome.
+
+---
+
+<p align="center"><em>
+Made with ☕ & 🧠 in NYC — let’s give code a memory, together.
+</em></p>
+```
+
