@@ -1,4 +1,4 @@
-<h1 align="center">Arc - Infrastructure for Compound Intelligence</h1>
+<h1 align="center">Arc - Infrastructure for Agents that Learn</h1>
 </em></p>
 
 <p align="center">
@@ -12,7 +12,8 @@ We’re building for an open future where experience is auditable, transferable,
 ## Learn More
 
 * **Website**: [arc.computer](https://www.arc.computer/)
-* **Contact**: [jarrod@arc.computer](mailto:jarrod@arc.computer)
+* **Twitter/X**: [Arc Intelligence](https://x.com/IntelligenceArc)
+* **Contact**: [agent@arc.computer](mailto:agent@arc.computer)
 
 <p align="center"><em>
 Made with ☕ & 🧠 in NYC
