@@ -5,9 +5,11 @@
   <a href="https://www.arc.computer">Website</a>
 </p>
 
-Arc is a research‑driven team building the learning layer for agents. We believe the next decade belongs to systems that learn with you and for you, capturing what works, transferring it across teams, and getting better with every outcome. With Arc, agents build experience. They learn your standards, push back when a choice conflicts with past wins, and share distilled tactics across your organization, creating a self‑improving execution layer.
+Arc builds infrastructure for agents that learn from operational experience. We automatically capture causality data during execution (what's attempted, how it's corrected, and what results) enabling continual learning without manual annotation or retraining.
 
-We’re building for an open future where experience is auditable, transferable, and compounding. If this resonates, follow our work and get in touch. 
+This operational supervision is the foundation for training world models that enable agents to simulate, plan, and improve autonomously, creating systems that compound intelligence over time rather than decay from static checkpoints.
+
+Our research-driven approach is open source and validated through peer-reviewed publications. We're building in the open. Explore our work, contribute to research, or reach out to collaborate.
 
 ## Learn More
 
